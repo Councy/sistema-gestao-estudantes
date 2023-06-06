@@ -45,11 +45,13 @@ namespace Gestão_Estudantes_Kauã
 
             if (tabela.Rows.Count > 0)
             {
-                MessageBox.Show("SIM");
+                //MessageBox.Show("SIM");
+                this.DialogResult = DialogResult.OK;
             }
             else
             {
-                MessageBox.Show("Usuário ou senha incorretos.","Erro de login", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show("Usuário ou senha incorretos.","Erro de login", 
+                MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
     }

@@ -16,7 +16,17 @@ namespace Gestão_Estudantes_Kauã
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Login_Form());
+            //Application.Run(new Login_Form());
+            Login_Form telaDeLogin = new Login_Form();
+
+            if (telaDeLogin.ShowDialog() == DialogResult.OK)
+            {
+                Application.Run(new FormPrincipal());
+            }
+            else
+            {
+                Application.Exit();
+            }
         }
     }
 }
