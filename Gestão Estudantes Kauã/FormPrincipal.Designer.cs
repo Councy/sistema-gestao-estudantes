@@ -74,7 +74,7 @@
             // 
             this.inserirEstudanteToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("inserirEstudanteToolStripMenuItem.Image")));
             this.inserirEstudanteToolStripMenuItem.Name = "inserirEstudanteToolStripMenuItem";
-            this.inserirEstudanteToolStripMenuItem.Size = new System.Drawing.Size(162, 22);
+            this.inserirEstudanteToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.inserirEstudanteToolStripMenuItem.Text = "Inserir Estudante";
             this.inserirEstudanteToolStripMenuItem.Click += new System.EventHandler(this.inserirEstudanteToolStripMenuItem_Click);
             // 
@@ -149,10 +149,10 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(79)))), ((int)(((byte)(73)))), ((int)(((byte)(130)))));
             this.ClientSize = new System.Drawing.Size(715, 455);
             this.Controls.Add(this.menuStrip1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.IsMdiContainer = true;
             this.MainMenuStrip = this.menuStrip1;
             this.Name = "FormPrincipal";
             this.Text = "SGA - Principal";
