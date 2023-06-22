@@ -31,6 +31,7 @@ namespace Gestão_Estudantes_Kauã
 
         private void btnEntrar_Click(object sender, EventArgs e)
         {
+            
             MEU_BD bancoDeDados = new MEU_BD();
 
             MySqlDataAdapter adaptor = new MySqlDataAdapter();
