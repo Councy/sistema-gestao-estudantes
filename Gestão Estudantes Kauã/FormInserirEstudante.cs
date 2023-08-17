@@ -67,6 +67,10 @@ namespace Gestão_Estudantes_Kauã
                     MessageBox.Show("Novo estudante cadastrado.", "Sucesso!", 
                         MessageBoxButtons.OK, MessageBoxIcon.Information);
                 }
+                else
+                {
+                    MessageBox.Show("Erro", "Inserir Estudante", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                }
             }
         }
 
