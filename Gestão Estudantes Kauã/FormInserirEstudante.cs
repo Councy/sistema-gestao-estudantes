@@ -72,6 +72,10 @@ namespace Gestão_Estudantes_Kauã
                     MessageBox.Show("Erro", "Inserir Estudante", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
                 }
             }
+            else
+            {
+                MessageBox.Show("Campos não preenchidos", "Inserir Estudante", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+            }
         }
 
         bool Verificar()

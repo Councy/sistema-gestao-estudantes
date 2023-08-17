@@ -82,28 +82,29 @@
             // 
             this.listarEstudantesToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("listarEstudantesToolStripMenuItem.Image")));
             this.listarEstudantesToolStripMenuItem.Name = "listarEstudantesToolStripMenuItem";
-            this.listarEstudantesToolStripMenuItem.Size = new System.Drawing.Size(162, 22);
+            this.listarEstudantesToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.listarEstudantesToolStripMenuItem.Text = "Listar Estudantes";
+            this.listarEstudantesToolStripMenuItem.Click += new System.EventHandler(this.listarEstudantesToolStripMenuItem_Click);
             // 
             // estatísticasToolStripMenuItem
             // 
             this.estatísticasToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("estatísticasToolStripMenuItem.Image")));
             this.estatísticasToolStripMenuItem.Name = "estatísticasToolStripMenuItem";
-            this.estatísticasToolStripMenuItem.Size = new System.Drawing.Size(162, 22);
+            this.estatísticasToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.estatísticasToolStripMenuItem.Text = "Estatísticas";
             // 
             // editarRemoverToolStripMenuItem
             // 
             this.editarRemoverToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("editarRemoverToolStripMenuItem.Image")));
             this.editarRemoverToolStripMenuItem.Name = "editarRemoverToolStripMenuItem";
-            this.editarRemoverToolStripMenuItem.Size = new System.Drawing.Size(162, 22);
+            this.editarRemoverToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.editarRemoverToolStripMenuItem.Text = "Editar/Remover";
             // 
             // imprimirToolStripMenuItem
             // 
             this.imprimirToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("imprimirToolStripMenuItem.Image")));
             this.imprimirToolStripMenuItem.Name = "imprimirToolStripMenuItem";
-            this.imprimirToolStripMenuItem.Size = new System.Drawing.Size(162, 22);
+            this.imprimirToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.imprimirToolStripMenuItem.Text = "Imprimir";
             // 
             // cURSOToolStripMenuItem
