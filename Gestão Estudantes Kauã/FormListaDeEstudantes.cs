@@ -18,11 +18,28 @@ namespace Gestão_Estudantes_Kauã
             InitializeComponent();
         }
 
+        Estudante estudante = new Estudante();
+
         private void FormListaDeEstudantes_Load(object sender, EventArgs e)
         {
             MySqlCommand comando = new MySqlCommand("SELECT * FROM `estudantes`");
-            dataGridView1.ReadOnly = true;
+            dataGridViewLista.ReadOnly = true;
             DataGridViewImageColumn colunaDeFotos = new DataGridViewImageColumn();
+            dataGridViewLista.RowTemplate.Height = 80;
+            dataGridViewLista.DataSource = estudante.pegarEstudantes(comando);
+            colunaDeFotos = (DataGridViewImageColumn)dataGridViewLista.Columns[7];
+            colunaDeFotos.ImageLayout = DataGridViewImageCellLayout.Stretch;
+            dataGridViewLista.AllowUserToAddRows = false;
+        }
+
+        private void dataGridViewLista_CellContentDoubleClick(object sender, DataGridViewCellEventArgs e)
+        {
+            
+        }
+
+        private void buttonAtualizar_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

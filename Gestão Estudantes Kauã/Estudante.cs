@@ -40,6 +40,33 @@ namespace Gestão_Estudantes_Kauã
                 return false;
             }
         }
+        public bool atualizarEstudante(string nome, string sobrenome, DateTime nascimento,
+string telefone, string genero, string endereco, MemoryStream foto)
+        {
+            MySqlCommand comando = new MySqlCommand("UPDATE `estudantes` SET `nome`= @nm,`sobrenome`= @sbn,`nascimento`= @nsc,`genero`= @gen,`telefone`= @tel,`endereco`= @end,`foto`= @ft WHERE `id` = @id", bancoDeDados.getConexao);
+
+            comando.Parameters.Add("@nm", MySqlDbType.VarChar).Value = nome;
+            comando.Parameters.Add("@sbn", MySqlDbType.VarChar).Value = sobrenome;
+            comando.Parameters.Add("@nsc", MySqlDbType.Date).Value = nascimento;
+            comando.Parameters.Add("@gen", MySqlDbType.VarChar).Value = genero;
+            comando.Parameters.Add("@tel", MySqlDbType.VarChar).Value = telefone;
+            comando.Parameters.Add("@end", MySqlDbType.VarChar).Value = endereco;
+            comando.Parameters.Add("@ft", MySqlDbType.LongBlob).Value = foto.ToArray();
+
+            bancoDeDados.abrirConexao();
+
+            if (comando.ExecuteNonQuery() == 1)
+            {
+                bancoDeDados.fecharConexao();
+                return true;
+            }
+            else
+            {
+                bancoDeDados.fecharConexao();
+                return false;
+            }
+        }
+
 
         public DataTable pegarEstudantes(MySqlCommand comando)
         {
@@ -52,3 +79,5 @@ namespace Gestão_Estudantes_Kauã
         }
     }
 }
+
+
