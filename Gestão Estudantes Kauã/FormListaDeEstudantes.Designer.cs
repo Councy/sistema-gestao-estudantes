@@ -41,6 +41,7 @@
             this.dataGridViewLista.Size = new System.Drawing.Size(892, 345);
             this.dataGridViewLista.TabIndex = 0;
             this.dataGridViewLista.CellContentDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridViewLista_CellContentDoubleClick);
+            this.dataGridViewLista.DoubleClick += new System.EventHandler(this.dataGridViewLista_DoubleClick);
             // 
             // button1
             // 
@@ -62,6 +63,7 @@
             this.Controls.Add(this.button1);
             this.Controls.Add(this.dataGridViewLista);
             this.Name = "FormListaDeEstudantes";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FormListaDeEstudante";
             this.Load += new System.EventHandler(this.FormListaDeEstudantes_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewLista)).EndInit();

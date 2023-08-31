@@ -21,5 +21,15 @@ namespace Gestão_Estudantes_Kauã
         {
 
         }
+
+        private void buttonEnviarFoto_Click(object sender, EventArgs e)
+        {
+            OpenFileDialog abrirArquivo = new OpenFileDialog();
+            abrirArquivo.Filter = "Seleciona a Foto(*.jpg;*.png;*.gif)|*.jpg;*.png;*.gif";
+            if (abrirArquivo.ShowDialog() == DialogResult.OK)
+            {
+                pictureBoxFoto.Image = Image.FromFile(abrirArquivo.FileName);
+            }
+        }
     }
 }
