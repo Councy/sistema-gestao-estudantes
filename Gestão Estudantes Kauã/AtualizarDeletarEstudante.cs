@@ -13,6 +13,8 @@ namespace Gestão_Estudantes_Kauã
 {
     public partial class AtualizarDeletarEstudante : Form
     {
+
+        Estudante estudante = new Estudante();
         public AtualizarDeletarEstudante()
         {
             InitializeComponent();
@@ -52,7 +54,7 @@ namespace Gestão_Estudantes_Kauã
 
         private void buttonConfirmar_Click(object sender, EventArgs e)
         {
-            Estudante estudante = new Estudante();
+            // Estudante estudante = new Estudante();
             int id = Convert.ToInt32(textBoxID.Text);
             string nome = textBoxNome.Text;
             string sobrenome = textBoxEndereco.Text;
@@ -94,5 +96,11 @@ namespace Gestão_Estudantes_Kauã
                 MessageBox.Show("Campos não preenchidos", "Inserir Estudante", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
             }
         }
+
+        private void buttonRemover_Click(object sender, EventArgs e)
+        {
+            int id = Convert.ToInt32(textBoxID.Text);
+        }
     }
 }
+
