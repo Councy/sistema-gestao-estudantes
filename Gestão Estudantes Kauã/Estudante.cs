@@ -70,7 +70,7 @@ string telefone, string genero, string endereco, MemoryStream foto)
 
         public bool deletarEstudante(int id)
         {
-            MySqlCommand comando = new MySqlCommand("DELETE FROM `estudantes` WHERE `id` = @studentid");
+            MySqlCommand comando = new MySqlCommand("DELETE FROM `estudantes` WHERE `id` = @studentid", bancoDeDados.getConexao);
             comando.Parameters.Add("@studentid", MySqlDbType.Int32).Value = id;
 
             bancoDeDados.abrirConexao();
